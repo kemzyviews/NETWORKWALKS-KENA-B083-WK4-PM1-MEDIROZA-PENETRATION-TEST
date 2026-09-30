@@ -37,8 +37,10 @@ Vulnerability: SQL Injection in patient portal login form
 Access gained: Full login bypass, admin-level patient portal access
 Files retrieved: 3 encrypted PDF pathology reports (patient_report_1.pdf, patient_report_2.pdf, patient_report_3.pdf)
 
-Screenshots: <img width="1102" height="392" alt="M1-sha256-hashes-3-files" src="https://github.com/user-attachments/assets/ac8d7b38-6c67-4924-ab5b-99a34d846ba0" />
-<img width="1193" height="520" alt="M1-sqli-login-bypass-patient-portal" src="https://github.com/user-attachments/assets/bceb8c48-7174-4e5a-99d6-ab08f03c602f" />
+Screenshots:
+<img width="853" height="257" alt="M2-file1-cracked-123456" src="./screenshots/M2-file1-cracked-123456.png" />
+<img width="835" height="217" alt="M2-file2-cracked-password" src="./screenshots/M2-file2-cracked-password.png" />
+<img width="858" height="255" alt="M2-file3-cracked-password" src="./screenshots/M2-file3-cracked-password.png" />
 
 Milestone 2: Password Cracking & Data Extraction
 
