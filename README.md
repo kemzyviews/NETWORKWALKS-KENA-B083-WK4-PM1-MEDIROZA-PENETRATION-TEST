@@ -56,9 +56,26 @@ patient_report_1.pdf	123456	Very weak, cracked instantly
 patient_report_2.pdf	password	Very weak, cracked instantly
 patient_report_3.pdf	!@#$%^&	Stronger, required a larger wordlist (rockyou.txt)
 
-Screenshots: <img width="858" height="255" alt="M2-file3-cracked-(!@#$%^ )" src="https://github.com/user-attachments/assets/99485fcf-b0e6-4059-8087-8b6e21bbe7c9" />
-<img width="835" height="217" alt="M2-file2-cracked- password" src="https://github.com/user-attachments/assets/49fa8bde-094d-4121-99a5-03364bd397b3" />
-<img width="853" height="257" alt="M2-file1-cracked-123456" src="https://github.com/user-attachments/assets/e6d2f019-804c-47d5-9741-d9bd56f1ff57" />
+## Milestone 2: Password Cracking & Data Extraction
+
+### Screenshots
+
+#### File 2 — Unlocked Content
+
+![File 2 unlocked content](screenshots/M2-file2-unlocked-content.png)
+
+#### File 2 — Cracked Password
+
+![File 2 cracked password](screenshots/M2-file2-cracked-password.png)
+
+#### File 3 — Cracked Password
+
+![File 3 cracked password](screenshots/M2-file3-cracked-symbols.png)
+
+#### File 3 — Unlocked Content
+
+![File 3 unlocked content](screenshots/M2-file3-unlocked-content.png)
+
 
 Milestone 3: Metadata Analysis & Critical Data Exposure
 
