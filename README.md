@@ -78,10 +78,18 @@ Staff salary data exposed: 30 employee records including full names, job titles,
 Shareholder data exposed: 10 shareholder records including names, share percentages, shares held, and share class
 Severity note: The exposure of national ID numbers alongside salary data represents a significant privacy risk beyond the task's stated scope of "salary and shareholder details."
 
-Screenshots (redacted): <img width="553" height="667" alt="M3-database-backup-content-REDACTED" src="https://github.com/user-attachments/assets/b82ba9dc-03ef-4e23-ae78-fa1ea1aa447a" />
-<img width="1115" height="237" alt="M3-exposed-directory-listing" src="https://github.com/user-attachments/assets/08415c68-be07-4a7a-a494-b7f038189c30" />
-<img width="440" height="613" alt="M3-file3-metadata-clue-found" src="https://github.com/user-attachments/assets/e6d6d9de-e1db-41b3-8563-743114780295" />
 
+## Milestone 1: Initial Access & Authentication Bypass
+
+### Screenshots
+
+#### SHA-256 Hashes
+
+![SHA-256 hashes of the three files](screenshots/M1-sha256-hashes-3-files.png)
+
+#### SQL Injection Login Bypass
+
+![SQL injection login bypass](screenshots/M1-sqli-login-bypass-patient-portal.png)
 Problems Encountered & Solutions
 Problem: Downloaded rockyou.txt from a browser source kept being silently removed after download.
 Cause: Likely flagged by the OS/browser as a suspicious file due to its association with password cracking.
