@@ -36,13 +36,32 @@ Result
 Vulnerability: SQL Injection in patient portal login form
 Access gained: Full login bypass, admin-level patient portal access
 Files retrieved: 3 encrypted PDF pathology reports (patient_report_1.pdf, patient_report_2.pdf, patient_report_3.pdf)
+## Milestone 2: Password Cracking & Data Extraction
 
-Screenshots:
-<img width="853" height="257" alt="M2-file1-cracked-123456" src="./screenshots/M2-file1-cracked-123456.png" />
-<img width="835" height="217" alt="M2-file2-cracked-password" src="./screenshots/M2-file2-cracked-password.png" />
-<img width="858" height="255" alt="M2-file3-cracked-password" src="./screenshots/M2-file3-cracked-password.png" />
+**Objective:** Crack the encryption on all 3 retrieved files.
 
-Milestone 2: Password Cracking & Data Extraction
+### Steps
+1. Extracted each PDF's crackable hash using the Networkwalks Hash Calculator.
+2. Ran each hash through a dictionary attack using the Networkwalks Password Cracker.
+3. Files 1 and 2 cracked instantly using the built-in 100-word list. File 3 did not crack with the small wordlist, confirming the task's hint that a single approach would not work for all 3 files.
+4. For file 3, downloaded the rockyou.txt wordlist (14 million real leaked passwords) and re-ran the attack with a larger dictionary, successfully cracking it.
+5. Opened each PDF using its recovered password to confirm access.
+
+### Result
+| File | Password | Strength |
+|---|---|---|
+| patient_report_1.pdf | `123456` | Very weak, cracked instantly |
+| patient_report_2.pdf | `password` | Very weak, cracked instantly |
+| patient_report_3.pdf | `!@#$%^&` | Stronger, required a larger wordlist (rockyou.txt) |
+
+### Screenshots
+![File 1 cracked - 123456](./M2-file1-cracked-123456.png)
+![File 2 hash extracted](./M2-file2-hash-extracted.png)
+![File 2 cracked - password](./M2-file2-cracked-password.png)
+![File 2 unlocked content](./M2-file2-unlocked-content.png)
+![File 3 hash extracted](./M2-file3-hash-extracted.png)
+![File 3 cracked - password](./M2-file3-cracked-password.png)
+![File 3 unlocked content](./M2-file3-unlocked-content.png)
 
 Objective: Crack the encryption on all 3 retrieved files.
 
